@@ -1,5 +1,7 @@
 # MCP 数据可视化服务器
 
+[![CI](https://github.com/wzx11223344/mcp-data-viz/actions/workflows/ci.yml/badge.svg)](https://github.com/wzx11223344/mcp-data-viz/actions/workflows/ci.yml)
+
 > 基于 FastMCP 框架的数据可视化 MCP 服务器，提供 32 个工具用于图表生成、报告构建和数据处理。
 
 ## 项目描述
@@ -184,6 +186,21 @@ mcp-data-viz/
 ├── README.md          # 项目文档
 ├── SKILL.md           # SkillHub 技能描述
 └── output/            # 图表输出目录（自动创建）
+```
+
+## 测试
+
+运行单元测试：
+
+```bash
+pip install pytest flake8
+pytest tests/ -v --tb=short
+```
+
+代码质量检查：
+
+```bash
+flake8 . --count --max-line-length=120 --statistics
 ```
 
 ## 许可证
